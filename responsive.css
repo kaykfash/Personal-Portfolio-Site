@@ -1,0 +1,117 @@
+@media (max-width: 1190px) {
+  .about .content {
+    width: 85%;
+  }
+  .skills .content {
+    width: 90%;
+  }
+  .services .content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1090px) {
+  .about .about-details {
+    flex-direction: column;
+  }
+
+  .about .about-details .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .about .about-details .left {
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box {
+    width: calc(100% / 2 - 20px);
+  }
+
+  .contact .text {
+    width: 90%;
+  }
+}
+/* Tab view */
+@media (max-width: 750px) {
+  nav .navbar .menu {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    background: #5cdb95;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    transition: all 0.5s ease;
+  }
+  nav .navbar.active .menu {
+    left: 0;
+  }
+
+  .navbar .menu li a {
+    font-size: 23px;
+    color: #edf5e1;
+    display: block;
+    margin: 10px 0;
+    transition: all 0.4s ease;
+  }
+  .navbar .menu li a:hover {
+    color: #05386b;
+  }
+  .navbar .media-icons a {
+    display: none;
+  }
+
+  nav .menu-btn {
+    color: #05386b;
+    display: block;
+    cursor: pointer;
+  }
+  .navbar .cancel-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .home .text .text-two {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -10px;
+  }
+
+  .home .text .text-two {
+    font-size: 65px;
+  }
+  .home .text .text-three {
+    font-size: 35px;
+  }
+  .skills .skill-details {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .skills .skill-details .left {
+    width: 90%;
+  }
+  .skills .skill-details .boxes {
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box {
+    width: 100%;
+  }
+  .contact .text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 510px) {
+  .home .text .text-two {
+    font-size: 55px;
+  }
+  .home .text .text-three {
+    font-size: 33px;
+  }
+}
